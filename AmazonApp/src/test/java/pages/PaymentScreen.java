@@ -42,9 +42,7 @@ public class PaymentScreen extends TestUtil {
 
 			waitForElement(driver, radioButtonNetBanking);
 			logMessage("Scroll Complete and net banking option is visible");
-			// Added pause to make the button click as waiting for the element and then
-			// clicking did not work
-			Thread.sleep(5000);
+			
 			radioButtonNetBanking.click();
 			logMessageWithScreenShot("Clicked on net banking radio button", "12_Net Banking radio");
 

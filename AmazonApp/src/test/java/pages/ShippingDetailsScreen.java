@@ -70,56 +70,23 @@ public class ShippingDetailsScreen extends TestUtil {
 		addNewAddressButton.click();
 	}
 
-	public void enterFullName(String name) {
-		fullName.sendKeys(name, "\t");
-	}
-
-	public void enterPhoneNumber(int phone) {
+	public void enterFullName(String name, int phone,int zip, String cityName, String stateName, String line1, String line2, String landmarkName) {
+		fullName.sendKeys(name, "\t");	
 		phoneNumber.sendKeys(Integer.toString(phone), "\t");
-	}
-
-	public void enterPostalCode(int zip) {
-		postalCode.sendKeys(Integer.toString(zip), "\t");
-	}
-
-	public void enterCity(String cityName) {
+		postalCode.sendKeys(Integer.toString(zip), "\t");	
 		city.clear();
-		city.sendKeys(cityName, "\t");
-	}
-
-	public void enterState(String stateName) {
+		city.sendKeys(cityName, "\t");	
 		state.clear();
-		state.sendKeys(stateName, "\t");
-	}
-
-	public void enterAddressLine1(String line1) {
-		address1.sendKeys(line1, "\t");
-	}
-
-	public void enterAddressLine2(String line2) {
-		address2.sendKeys(line2, "\t");
-	}
-
-	public void enterLandmark(String landmarkName) {
+		state.sendKeys(stateName, "\t");	
+		address1.sendKeys(line1, "\t");	
+		address2.sendKeys(line2, "\t");	
 		landmark.sendKeys(landmarkName, "\t");
-	}
-
-	public void hideKeyboard() {
 		driver.hideKeyboard();
-	}
-
-	public void clickOnAddressType() {
 		addressType.click();
 		log.info("Clicked on address type");
-	}
-
-	public void selectAddressType() {
 		homeAddress.click();
-	}
-
-	public void clickOnDeliverToThisAddress() {
 		deliverToThisAddressButton.click();
-	}
+	}	
 
 	public void clickOnContinueButton() {
 		try {

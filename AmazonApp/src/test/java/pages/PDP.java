@@ -42,7 +42,6 @@ public class PDP extends TestUtil {
 				scrollDown();
 			}
 			logMessageWithScreenShot("Scroll Complete...", "6_Add to cart");
-			Thread.sleep(5000);
 			addToCartButton.click();
 			logMessage("Clicked on Add to Cart Button...");
 		} catch (Exception e) {
